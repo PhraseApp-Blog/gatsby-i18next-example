@@ -1,5 +1,5 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# gatsby-i18next-example
+Gatsby i18next example.
 
 For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
 
