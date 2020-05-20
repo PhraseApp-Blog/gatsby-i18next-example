@@ -9,11 +9,13 @@ import Layout from '../components/layout';
 const SecondPage = () => (
   <Translation>
     {t => (
-      <Layout>
-        <h1>{t('Hi from the second page')}</h1>
-        <p>{t('Welcome to page 2')}</p>
-        <Link to="/">{t('Go back to the homepage')}</Link>
-    </Layout>
+        <>
+        <Layout>
+          <h1>{t('Hi from the second page')}</h1>
+          <p>{t('Welcome to page 2')}</p>
+          <Link to="/">{t('Go back to the homepage')}</Link>
+        </Layout>
+        </>
     )}
   </Translation>
 );

@@ -2,11 +2,15 @@ import i18next from 'i18next';
 
 function setupI18next(fallbackLng, i18nextOptions) {
   i18next.init({
-    debug: false,
+    debug: true,
     defaultNS: 'messages',
     fallbackLng,
     react: {
       useSuspense: false,
+    },
+    interpolation: {
+      prefix: '[[__',
+      suffix: '__]]',
     },
     ...i18nextOptions,
   });

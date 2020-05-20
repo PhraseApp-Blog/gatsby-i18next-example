@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withTranslation } from 'react-i18next';
 import { Head } from '@wapps/gatsby-plugin-i18next';
-import { PhraseAppInitializer } from 'react-i18next-phraseapp';
+import { PhraseAppInitializer, withNamespaces } from 'react-i18next-phraseapp';
 
 import Header from './header';
 import './layout.css';
@@ -33,4 +32,4 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default withTranslation()(Layout);
+export default withNamespaces()(Layout);
